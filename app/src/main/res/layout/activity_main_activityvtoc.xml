@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityvtoc">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="185dp"
+        android:layout_toStartOf="@+id/textView19"
+        android:background="@android:color/darker_gray"
+        android:layout_toLeftOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_marginEnd="39dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="39dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="190dp"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/b4"
+        android:layout_width="17dp"
+        android:layout_height="93dp"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toStartOf="@+id/textView18"
+        android:background="@android:color/background_dark"
+        android:layout_toLeftOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/b3"
+        android:layout_width="17dp"
+        android:layout_height="93dp"
+        android:layout_alignEnd="@+id/borrar"
+        android:layout_alignTop="@+id/textView19"
+        android:background="@android:color/background_dark"
+        android:layout_alignRight="@+id/borrar" />
+
+    <TextView
+        android:id="@+id/b2"
+        android:layout_width="17dp"
+        android:layout_height="93dp"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:background="@android:color/background_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="164dp" />
+
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="17dp"
+        android:layout_height="93dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_marginStart="126dp"
+        android:background="@android:color/background_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="126dp" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="18dp"
+        android:text="Calcular"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp" />
+
+    <Button
+        android:id="@+id/borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/calcular"
+        android:layout_centerHorizontal="true"
+        android:text="borrar" />
+
+    <Button
+        android:id="@+id/regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/b4"
+        android:layout_alignTop="@+id/calcular"
+        android:text="Regresar"
+        android:layout_alignLeft="@+id/b4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="49dp"
+        android:text="Valor:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="107dp"
+        android:text="Unidades"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="175dp"
+        android:text="Tolerancia:"
+        android:layout_alignLeft="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/textView9" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView19"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignRight="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/tolerancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:layout_toEndOf="@+id/calcular"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/calcular" />
+</RelativeLayout>
